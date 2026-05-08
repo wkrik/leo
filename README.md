@@ -1,4 +1,5 @@
 # LEO - Log Entry Organizer
+![Shell Script](https://img.shields.io/badge/shell-POSIX%20sh-blue) ![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20Unix-green) ![CLI](https://img.shields.io/badge/CLI-friendly-orange) ![Tiny](https://img.shields.io/badge/lightweight-yes-success) ![License](https://img.shields.io/badge/license-Unlicense-brightgreen)
 
 A tiny Linux shell utility for quickly logging daily work activity throughout the day.
 
@@ -6,7 +7,7 @@ LEO was written after the all-too-common Friday afternoon request:
 
 > "Send me a summary of everything you worked on this week."
 
-Instead of trying to remember an entire week of tasks, LEO lets you rapidly append timestamped notes during the day from the command line. At the end of the week, your logs are already organized and ready to send as a report.
+Instead of trying to remember an entire week of tasks, LEO lets you rapidly append timestamped notes during the day from any local shell command line. At the end of the week, your logs are already organized and ready to send as a report.
 
 Originally written in 1993 for Linux/Unix systems.
 
@@ -28,15 +29,12 @@ Originally written in 1993 for Linux/Unix systems.
 
 ```text
 05/07/26, 08:05 --
-
 Created account for John Doe in finance
 
 05/07/26, 11:45 --
-
 Validated last night's backups
 
 05/07/26, 13:00 --
-
 Team meeting
 ```
 
@@ -44,19 +42,19 @@ Team meeting
 
 # Installation
 
-Clone the repository:
+1. Download leo or Clone the repository:
 
 ```bash
 git clone https://github.com/wkrik/leo.git
 ```
 
-Make the script executable:
+2. Make the script executable:
 
 ```bash
 chmod +x leo
 ```
 
-Optionally place it somewhere in your PATH:
+3. Copy leo to somewhere in your PATH:
 
 ```bash
 sudo cp leo /usr/local/bin/
@@ -91,6 +89,7 @@ leo -l
 ```
 
 ## Edit Current Daily Log
+*Note: Uses vim as the default editor. This can be changed in the script.*
 
 ```bash
 leo -e
@@ -159,30 +158,20 @@ Then paste the results directly into an email or report.
 
 # History
 
-Written by Kirk Waingrow on 11/10/1993.
+Written by Kirk Waingrow 1993.
 
-Inspired by Hal Pomeranz at QMS Inc., creator of:
-
-```text
-PLOD - Personal LOgging Device
-```
-
----
-
-# Why LEO?
-
-Because nobody remembers what they worked on by Friday afternoon.
-
-LEO keeps a running timestamped journal of daily work activity with almost zero friction.
-
-Open a terminal, type one line, continue working.
+Inspired by Hal Pomeranz at QMS Inc., creator of: PLOD - Personal LOgging Device
 
 ---
 
 # License
 
-MIT License
+This is free and unencumbered software released into the public domain.
 
-Use it, modify it, improve it, and share it freely.
+Anyone is free to copy, modify, publish, use, compile, sell, or
+distribute this software, either in source code form or as a compiled
+binary, for any purpose, commercial or non-commercial, and by any
+means.
 
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
 
