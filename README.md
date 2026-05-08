@@ -1,6 +1,6 @@
 # LEO - Log Entry Organizer
 
-A tiny Unix shell utility for quickly logging daily work activity throughout the day.
+A tiny Linux shell utility for quickly logging daily work activity throughout the day.
 
 LEO was written after the all-too-common Friday afternoon request:
 

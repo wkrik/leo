@@ -12,6 +12,14 @@
 # Written by kirk Waingrow 11/10/93  
 # Inspired by Hal Pomeranz, QMS Inc. who wrote PLOD - Personal LOgging Device
 #
+# This is free and unencumbered software released
+# into the public domain. Anyone is free to copy,
+# modify, publish, use, compile, sell, or
+# distribute this software, either in source code
+# form or as a compiled binary, for any purpose,
+# commercial or non-commercial, and by any means.
+# See: https://github.com/wkrik/leo/blob/main/LICENSE
+#
 #
 #########################################################################
 VERSION=1.2
