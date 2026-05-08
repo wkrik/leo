@@ -64,6 +64,13 @@ sudo cp leo /usr/local/bin/
 
 # Usage
 
+| Option | Description |
+|---|---|
+| `leo text here` | Append single line entry |
+| `leo -l` | List current daily log |
+| `leo -e` | Edit current daily log |
+| `stdin \| leo` | Append piped input |
+
 ## Single Line Entry
 
 ```bash
@@ -82,19 +89,6 @@ or
 echo "Discussed quarterly infrastructure upgrades" | leo
 ```
 
-## List Current Daily Log
-
-```bash
-leo -l
-```
-
-## Edit Current Daily Log
-*Note: Uses vim as the default editor. This can be changed in the script.*
-
-```bash
-leo -e
-```
-
 ---
 
 # Log Storage
@@ -105,16 +99,27 @@ By default, logs are stored in:
 ~/leo
 ```
 
-Each day receives its own logfile using the format:
+## List Current Daily Log
 
-```text
-YYMMDD-DayName
+Each day receives its own logfile using the format: **YYMMDD-DayName**
+
+```bash
+$ cd ~/leo
+$ leo -l
+
+-rwx------  1 jdoe jdoe  836 May  4 16:13 260504-Monday
+-rwx------  1 jdoe jdoe  763 May  5 16:36 260505-Tuesday
+-rwx------  1 jdoe jdoe  623 May  6 16:58 260506-Wednesday
+-rwx------  1 jdoe jdoe  640 May  7 16:42 260507-Thursday
+-rwx------  1 jdoe jdoe  878 May  8 16:58 260508-Friday
+
 ```
 
-Example:
+## Edit Current Daily Log
+*Note: Uses vim as the default editor. This can be changed in the script.*
 
-```text
-260507-Thursday
+```bash
+leo -e
 ```
 
 ---
@@ -145,20 +150,9 @@ Then paste the results directly into an email or report.
 
 ---
 
-# Script Overview
-
-| Option | Description |
-|---|---|
-| `leo text here` | Append single line entry |
-| `leo -l` | List current daily log |
-| `leo -e` | Edit current daily log |
-| `stdin \| leo` | Append piped input |
-
----
-
 # History
 
-Written by Kirk Waingrow 1993.
+Written by Kirk Waingrow in 1993 when a quick way was needed to provide a short report of weekly activities to the boss.
 
 Inspired by Hal Pomeranz at QMS Inc., creator of: PLOD - Personal LOgging Device
 
